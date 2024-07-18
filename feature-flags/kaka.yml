@@ -1,1 +1,7 @@
 name: kaka
+availableValues:
+  - 3
+environments:
+  Production:
+    enabled: false
+    value: 3
