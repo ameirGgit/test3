@@ -1,0 +1,13 @@
+name: v1
+labels:
+  - backward-compatible-configuration
+  - lbl1
+  - lbl2
+  - lbl3
+environments:
+  Production:
+    enabled: false
+    value: false
+  qa:
+    enabled: false
+    value: false

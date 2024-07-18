@@ -1,0 +1,4 @@
+name: variant5
+availableValues:
+  - 'TRUE'
+  - 'FALSE'

@@ -1,0 +1,48 @@
+name: string
+labels:
+  - backward-compatible-configuration
+  - lbl1
+  - lbl2
+  - lbl3
+availableValues:
+  - s2
+  - s3
+  - s34
+  - s1
+environments:
+  Production:
+    conditions:
+      - group:
+          name:
+            - tg2
+            - tg1
+        value: s3
+      - version:
+          operator: semver-gt
+          semver: '][-43jif'
+        property:
+          name: app_release
+          operator: semver-ne
+          operand: '@#@!'
+        value:
+          - percentage: 33
+            option: s2
+          - percentage: 33
+            option: s3
+          - percentage: 34
+            option: s34
+    value: s2
+  qa:
+    conditions:
+      - group:
+          name: tg1
+        value:
+          - percentage: 25
+            option: s2
+          - percentage: 25
+            option: s3
+          - percentage: 25
+            option: s34
+          - percentage: 25
+            option: s1
+    value: s3

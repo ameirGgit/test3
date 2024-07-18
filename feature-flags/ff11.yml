@@ -1,0 +1,14 @@
+name: ff11
+availableValues:
+  - asdf
+  - 43bvfvbfsdg
+  - asdfbbvcxb
+environments:
+  Production:
+    enabled: false
+    conditions:
+      - dependency:
+          flag: int1
+          value: '1'
+        value: 43bvfvbfsdg
+    value: asdfbbvcxb

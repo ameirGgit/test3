@@ -1,0 +1,11 @@
+name: f1
+environments:
+  dev:
+    enabled: false
+    value: false
+  qa:
+    enabled: false
+    value: false
+  zzzz:
+    enabled: false
+    value: false

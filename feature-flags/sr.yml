@@ -1,0 +1,42 @@
+name: sr
+labels:
+  - backward-compatible-configuration
+  - lbl1
+  - lbl2
+  - lbl3
+availableValues:
+  - s2
+  - s3
+  - s4
+  - s1
+environments:
+  Production:
+    enabled: false
+    conditions:
+      - version:
+          operator: semver-gt
+          semver: fds41][
+        property:
+          name: app_release
+          operator: semver-lt
+          operand: fda=-
+        value:
+          - percentage: 33
+            option: s2
+          - percentage: 33
+            option: s3
+          - percentage: 34
+            option: s4
+  qa:
+    enabled: false
+    conditions:
+      - group:
+          name: tg1
+        value:
+          - percentage: 33
+            option: s2
+          - percentage: 33
+            option: s3
+          - percentage: 34
+            option: s4
+    value: s4

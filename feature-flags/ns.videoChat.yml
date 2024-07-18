@@ -1,0 +1,8 @@
+name: ns.videoChat
+environments:
+  dev:
+    enabled: false
+    value: false
+  zzzz:
+    enabled: false
+    value: false

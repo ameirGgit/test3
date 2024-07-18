@@ -1,0 +1,14 @@
+name: int1
+labels:
+  - backward-compatible-configuration
+  - lbl1
+  - lbl2
+  - lbl3
+availableValues:
+  - 1
+  - 2
+  - 3
+  - 4
+environments:
+  Production:
+    enabled: false

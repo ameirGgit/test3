@@ -1,0 +1,41 @@
+name: zzz
+labels:
+  - lbl1
+  - lbl2
+  - lbl3
+environments:
+  Production:
+    platforms:
+      - name: .NET
+        value: false
+      - name: PHP
+        conditions:
+          - property:
+              name: Bln
+              operator: is-undefined
+            value: false
+        value: false
+    conditions:
+      - group:
+          name:
+            - ttt
+            - tg2
+        value:
+          - percentage: 50
+            option: true
+    value:
+      - from: 2024-02-21T04:30:13.001Z
+        percentage: 0
+        option: true
+      - from: 2024-02-27T22:00:00.000Z
+        percentage: 100
+        option: true
+  dev:
+    enabled: false
+    value: false
+  qa:
+    enabled: false
+    value: false
+  zzzz:
+    enabled: false
+    value: false

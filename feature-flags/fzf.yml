@@ -1,0 +1,13 @@
+name: fzf
+labels:
+  - lbl1
+environments:
+  Production:
+    enabled: false
+    value: false
+  dev:
+    enabled: false
+    value: false
+  zzzz:
+    enabled: false
+    value: false

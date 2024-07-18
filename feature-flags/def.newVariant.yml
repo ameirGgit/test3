@@ -1,0 +1,13 @@
+name: def.newVariant
+labels:
+  - backward-compatible-configuration
+  - lbl1
+  - lbl2
+  - lbl3
+availableValues:
+  - A
+  - C
+  - B
+environments:
+  Production:
+    enabled: false

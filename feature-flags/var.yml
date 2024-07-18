@@ -1,0 +1,33 @@
+name: var
+labels:
+  - backward-compatible-configuration
+  - lbl1
+  - lbl2
+  - lbl3
+availableValues:
+  - green
+  - blue
+  - red
+environments:
+  Production:
+    enabled: false
+    conditions:
+      - property:
+          name: channel
+          operator: in-array
+          operand:
+            - a
+            - b
+        value:
+          - percentage: 33
+            option: blue
+          - percentage: 33
+            option: green
+          - percentage: 14
+            option: red
+          - percentage: 20
+            option: orange
+    value: blue
+  zzzz:
+    enabled: false
+    value: []

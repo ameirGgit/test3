@@ -1,0 +1,14 @@
+name: snakeGame.release
+labels:
+  - backward-compatible-configuration
+  - lbl1
+  - lbl2
+  - lbl3
+environments:
+  Production:
+    platforms:
+      - name: .NET
+        value: false
+      - name: PHP
+        value: false
+    value: true

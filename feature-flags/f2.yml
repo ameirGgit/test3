@@ -1,0 +1,26 @@
+name: f2
+labels:
+  - backward-compatible-configuration
+  - lbl1
+  - lbl2
+  - lbl3
+environments:
+  Production:
+    enabled: false
+    platforms:
+      - name: NodeJS
+        value: false
+      - name: .NET
+        value: false
+      - name: PHP
+        value: false
+    conditions:
+      - version:
+          operator: semver-eq
+          semver: '3.0'
+        property:
+          name: app_release
+          operator: semver-gt
+          operand: '5'
+        value: false
+    value: true

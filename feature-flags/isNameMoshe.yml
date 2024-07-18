@@ -1,0 +1,11 @@
+name: isNameMoshe
+environments:
+  dev:
+    enabled: false
+    value: false
+  z2:
+    enabled: false
+    value: false
+  zzzz:
+    enabled: false
+    value: false

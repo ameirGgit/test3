@@ -1,0 +1,19 @@
+name: sls
+labels:
+  - backward-compatible-configuration
+  - lbl1
+  - lbl2
+  - lbl3
+environments:
+  Production:
+    platforms:
+      - name: Browser
+        conditions:
+          - dependency:
+              flag: int1
+              value: '1'
+            value: true
+        value:
+          - percentage: 60
+            option: true
+    value: false

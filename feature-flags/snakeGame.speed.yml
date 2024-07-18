@@ -1,0 +1,38 @@
+name: snakeGame.speed
+labels:
+  - backward-compatible-configuration
+  - lbl1
+  - lbl2
+  - lbl3
+availableValues:
+  - abc
+  - normal
+environments:
+  Production:
+    platforms:
+      - name: .NET
+      - name: PHP
+        value: normal
+    conditions:
+      - dependency:
+          flag: int1
+          value: '1'
+        value: abc
+      - property:
+          propertyConditions:
+            - operator: ne
+              property: channel
+              operand: '3'
+            - operator: ne
+              property: channel
+              operand: '2'
+            - operator: ne
+              property: channel
+              operand: '1'
+        value: null
+      - value: null
+    value: []
+  dev:
+    enabled: false
+  qa:
+    enabled: false
