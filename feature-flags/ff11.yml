@@ -14,4 +14,14 @@ environments:
     value: asdfbbvcxb
   dev:
     enabled: false
+    conditions:
+      - group:
+          name: tg2
+        value:
+          - percentage: 33
+            option: 43bvfvbfsdg
+          - percentage: 33
+            option: asdfbbvcxb
+          - percentage: 34
+            option: asdf
     value: asdfbbvcxb
