@@ -12,3 +12,5 @@ environments:
           value: '1'
         value: 43bvfvbfsdg
     value: asdfbbvcxb
+  dev:
+    enabled: false
