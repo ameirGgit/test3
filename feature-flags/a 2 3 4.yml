@@ -3,5 +3,5 @@ environments:
   Production:
     enabled: false
     value:
-      - percentage: 50
+      - percentage: 60
         option: true
