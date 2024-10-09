@@ -2,6 +2,11 @@ name: a 2 3 4
 environments:
   Production:
     enabled: false
+    conditions:
+      - property:
+          name: internal.lib_version
+          operator: is-undefined
+        value: false
     value:
       - percentage: 60
         option: true
