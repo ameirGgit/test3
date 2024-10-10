@@ -17,9 +17,15 @@ environments:
         value: false
     conditions:
       - property:
-          name: internal.customPlatform
-          operator: ne
-          operand: '123'
+          propertyConditions:
+            - operator: semver-lt
+              property: internal.api_version
+              operand: '2'
+            - operator: is-undefined
+              property: Bln
+            - operator: ne
+              property: internal.customPlatform
+              operand: '123'
         value: false
       - property:
           name: platform
