@@ -16,6 +16,18 @@ environments:
             value: false
         value: false
     conditions:
+      - property:
+          name: internal.customPlatform
+          operator: is-undefined
+        value: false
+      - property:
+          name: platform
+          operator: is-undefined
+        value: false
+      - property:
+          name: Bln
+          operator: is-undefined
+        value: false
       - group:
           name:
             - ttt
