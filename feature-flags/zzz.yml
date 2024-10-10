@@ -18,7 +18,8 @@ environments:
     conditions:
       - property:
           name: internal.customPlatform
-          operator: is-undefined
+          operator: ne
+          operand: '123'
         value: false
       - property:
           name: platform
