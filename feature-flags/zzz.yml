@@ -26,6 +26,7 @@ environments:
             - operator: ne
               property: internal.customPlatform
               operand: '123'
+        acrossTypesLogicGate: or
         value: false
       - property:
           name: platform
